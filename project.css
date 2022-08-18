@@ -1,0 +1,142 @@
+/* index */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+nav {
+    position: fixed;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    width: 100%;
+    background-color: white;
+    /* margin-top: 10px; */
+}
+
+nav p {
+    position: fixed;
+    font-size: 2vw;
+    padding: 20px;
+}
+
+#nav span a img{
+    height: 1vw;
+    width: 1vw;
+    padding-top: 1vw;
+}
+#shop-name{
+    font-size: 2.5vw;
+}
+
+
+
+#currency-cart {
+    /* text-align: right; */
+    padding-top: 1vw;
+}
+
+#horizontal-line {
+    background-color: black;
+    width: 90%;
+    margin-left: 5%;
+    height: 3px;
+    position: fixed;
+    margin-top: 4vw;
+} 
+#main{
+    padding-top: 5vw;
+}
+ #main-left {
+    float: left;
+    height: 1000px;
+}
+
+#main-right {
+    border-left: 3px solid black;
+    margin-left: 70%;
+    width: 30%;
+    position: fixed;
+    height: 85%;
+}
+#main-right ul li a{
+    font-size: 3vh;
+}
+#card{
+    height: 25vh;
+    width: 20vw;
+    font-size: 4vh;
+    text-align: center;
+    position: block;
+    padding-left: 15%;
+    padding-top: 40%;
+}
+#card p{
+    background-color: pink;
+    padding:17%;
+}
+#card p a{
+    text-decoration: none;
+    font-size: 2vh;
+}
+
+#tv-img{
+    padding-left: 30%;
+    height: auto;
+    width: 80%;
+    height: 50%;
+}
+#tv-img-tag{
+    font-size: 7vh;
+    height: 20%;
+    width: 60%;
+    margin-top: -30%;
+
+}
+
+#phone-fridge{
+    margin-top: 15vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+#phone{
+    width: 25vw;
+    height: 35vw;
+}
+#fridge{
+    width: 20vw;
+    height: 25vw;
+}
+#accessories{
+    /* float:right; */
+    display: block;
+}
+#iphone-cases{
+    height: 30vw;
+    width: 45vw;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* #off{
+    font-size: 5vh;
+    position:absolute;
+    margin-bottom: 30%;
+} */
+
+#connect{
+    margin-top: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#connect{
+    padding-bottom: 100px;
+}
+#copyright{
+    float: right;
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>feedback</title>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/plasticine/100/000000/light-off.png">
+
+        <style>
+            #feedback{
+                text-align: center;
+                margin-top: 10%;
+                margin-left: 30%;
+                width: 450px;
+                top:0;
+                border: 1px solid darkgray;
+                box-shadow: 1px 1px 1px 1px darkgrey;
+
+            }
+            body{
+                font-family: sans-serif;
+                background-image: url("images/svg.png");
+                background-color: lightgray;
+            }
+            #top{
+                background-color: rgb(146, 145, 145);
+                color: white;
+                margin-top: -30px;
+            }
+            #top h3{
+                padding-top: 15px;
+                font-size: 30px;
+            }
+            .suggest{
+                font-size: 20px;
+            }
+            .let_us_know{
+                padding-bottom: 30px;
+                font-size: 15px;
+            }
+            #bottom label{
+                padding-right: 15px;
+               
+            }
+            #bottom{
+                background-color: lightgray;
+                margin-top: -15px;
+            }
+            textarea{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            button{
+                width: 200px;
+                height: 40px;
+                background-color:rgb(146, 145, 145) ;
+                color: white;
+                border-radius: 10px;
+                border: 10px;
+                margin-bottom: 20px;
+                font-size:large;
+            }
+            input{
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="feedback">
+            <div id="top">
+                <h3>Send us your feedback!</h3>
+                <p class="suggest">do you have a suggestion or found some bug?</p>
+                <p class="let_us_know">let us know in the feild below.</p>
+          </div>
+            <div>
+                <form id="bottom">
+                    <input type="checkbox" name="bug">
+                    <label for="bug">Bug</label>
+                    <input type="checkbox" name="suggestion">
+                    <label for="suggestion">Sugggestion</label>
+                    <input type="checkbox" name="other">
+                    <label for="other">Other</label><br>
+                    <textarea id="text" cols="40" rows="10">describe your experience here....</textarea><br>
+                    <button onclick="send()">Send Feedback</button>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script>
+        function send(){
+            var m=document.getElementById("text").value;
+            if(m=="" || m==null || m=="describe your experience here...."){
+                alert("enter feedback");
+            }
+            else{
+                alert("feedback submitted");
+            }
+        }
+    </script>
+</html>

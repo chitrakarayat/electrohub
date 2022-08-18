@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/plasticine/100/000000/light-off.png">
+    <head><title>login</title><link rel="stylesheet"href="signup.css"></head>
+    <body>
+        
+            <div id="main">
+            <div id="left">
+                
+                <form>
+                    <p><b>LOGIN</b></p>
+                    <span><img src="images/facebook-brands.svg"><img src="images/linkedin-brands.svg"><img src="images/google-brands.svg"></span><br>
+                    <input id="email" type="email" placeholder="Email"><br>
+                    <input id="password" type="password" placeholder="Password"><br>
+                    <button onclick="func1()">Login</button><br>
+                    <a href="signup.html">don't have an account?</a>
+                </form>
+            </div>
+            <div id="right">
+                <p id="heading">Electrohub</p>
+                <p id="store">in-store | online | mobile</p>
+                <p id="sale">Sales Start 25th July</p>
+            </div></div>
+    
+    </body>
+    <script>
+        function func1(){
+            var x=document.getElementById("email").value;
+            if(x==""|| x==null || document.getElementById('password').value=="" || document.getElementById('password').value==null){
+                alert("error! enter correct credentials");
+            }
+            else{
+                alert("login successful");
+                window.open("index.html");
+            }
+        }
+    </script>
+</html>

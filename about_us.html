@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Us</title>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/plasticine/100/000000/light-off.png">
+
+    <link href="about_us.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div id="main">
+        <nav id="nav">
+            <table>
+                <tr><td><a href="index.html">home</a></td><td><a href="#our_team">our team</a></td><td><a href="#brands">brands</a></td><td><A href="#investors">investors</A></td><td><a href="#locations">locations</a></td><td><a href="#contact_us">contact</a></td></tr>
+            </table>
+        </nav>
+
+    <p id="head">ELECTROHUB</p>
+    <p id="head_desc">Established in 2022, Electrohub aims at providing the best quality electroic products to its costumers. Here, at Electrohub we cut the middle-man and bring the products directly to you thus, abling us to provide you the electronics you love at affordable prices. </p>
+</div>
+    <div id="our_team">
+    <img src="images/dog.webp"><span id="span">Hey! I am <span>Chitra</span><br>I am an engineer with interest in business. Bringing both my interests together marked the beginning of <span>ELECTROHUB</span>. It is my dream project and I have put all my heart into developing this platform. Hope you like it!
+    </div>
+
+
+    <div id="brands">
+        <h3>Our <span>Patners</span></h3>
+        <img src="https://img.icons8.com/color/480/000000/fitbit.png"/>
+        <img src="https://img.icons8.com/ios/500/000000/dell.png"/>
+        <img src="https://img.icons8.com/ios-filled/500/000000/mac-os.png"/>
+        <img src="https://img.icons8.com/color/480/000000/samsung.png"/>
+        <img src="images/IMG_1823.png">
+        <img src="images/IMG_1825.png">
+    </div>
+
+
+
+    <div id="investors">
+        <h3>Our <span>Investors</span></h3>
+        <img src="images/company1.png">
+        <img src="images/company2.png"/>
+        <img src="images/company3.png"/>
+        <img src="images/company4.png"/>
+        <img src="images/company5.png">
+        <img src="images/company6.png">
+    </div>
+
+    
+    <div id="locations">
+        <h3>Our <span>Locations</span></h3>
+        <div>
+        <img src="https://img.icons8.com/cute-clipart/64/000000/office.png"/><ul type="none"><li id="hq">HQ Gurugram, India</li><li id="address">xyz street, sector-5</li></div>
+    </div>
+
+<div id="contact_us">
+<div id="contact">
+<table id="contact-table"><tr><th colspan="2" id="contact_head">Contact Us</th></tr>
+<tr><td><img src="https://img.icons8.com/ios-glyphs/60/1A1A1A/phone-disconnected.png" alt="error"></td><td>+91628665396</td></tr>
+<tr><td><img src="https://img.icons8.com/fluency/48/000000/mail.png"/></td><td>electrohub@gmail.com</td></tr>
+<tr><td><img src="https://img.icons8.com/ios-glyphs/60/1A1A1A/facebook-new.png"/></td><td>electrohub</td></tr>
+<tr><td><img src="https://img.icons8.com/material-rounded/96/1A1A1A/instagram-new.png"/> </td><td>electro_hub</td></tr>
+</table>
+
+</div>
+<div class="feedback-form">
+    <form>
+        <input id="email"type="email" placeholder="Email"><br>
+    <textarea id="textarea"cols="40" rows="2" placeholder="Enter your message"></textarea>  <br>  
+    <a href="#"><button type="submit" onclick="func1()">Submit</button></a>
+    </form>
+    <br>
+
+</div>
+</div>
+
+</body>
+<script>
+    function func1(){
+        if(document.getElementById("email").value==null || document.getElementById("email").value==""){
+            alert("enter email");
+        }
+        else if(document.getElementById("textarea").value==null || document.getElementById("textarea").value==""){
+            alert("message not entered");
+        }
+        else{
+            alert("message sent!");
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head><title>signup</title><link rel="stylesheet"href="signup.css">
+        <link rel="icon" type="image/x-icon" href="https://img.icons8.com/plasticine/100/000000/light-off.png">
+    </head>
+    <body>
+        
+            <div id="main">
+            <div id="left">
+                
+                <form>
+                    <p><b>Sign Up</b></p>
+                    <span><img src="images/facebook-brands.svg"><img src="images/linkedin-brands.svg"><img src="images/google-brands.svg"></span><br>
+                    <input id="Name" type="text" placeholder="Name" ><br>
+                    <input id="Email" type="email" placeholder="Email" ><br>
+                    <input id="pincode" type="number" placeholder="Pincode" ><br>
+                    <input id="password" type="password" placeholder="Password" ><br>
+                    <button onclick="func1()">Sign Up</button><br>
+                    <a href="login.html">already have an account?</a>
+                </form>
+            </div>
+            <div id="right">
+                <p id="heading">Electrohub</p>
+                <p id="store">in-store | online | mobile</p>
+                <p id="sale">Sales Start 25th July</p>
+            </div></div>
+    
+    </body>
+    <script>
+        function func1(){
+            if(document.getElementById("Name").value=="" || document.getElementById("Name").value=="null"){
+                alert("please enter name");
+            }
+            else if(document.getElementById("Email").value=="" || document.getElementById("Email").value==null){
+                alert("enter mail");
+            }
+            else if(document.getElementById("pincode").value=="" || document.getElementById("pincode").value==null || document.getElementById("pincode").value<99999)
+            {
+                alert("entered pincode is not valid");
+            }
+            else if(document.getElementById("password").value=="" || document.getElementById("password").value==null){
+                alert("enter password");
+            }
+            else{
+            alert("account created!");
+            window.open("index.html");
+        }
+           
+        }
+    </script>
+</html>

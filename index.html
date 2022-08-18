@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>electrohub</title>
+    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/plasticine/100/000000/light-off.png">
+
+</head>
+
+<body>
+    <div class="like">
+    <form>
+        <p>Are You Enjoying Your Experience at Electrohub ?</p>
+        <i onclick="like(this)" class="fa fa-thumbs-up"></i><br>
+        <button class="btn1" onclick="pop()">Submit</button>
+    </form>
+    </div>
+    <section id="nav-bar">
+        <div class="leftnav">
+            <table><tr>
+                <td><img src="https://img.icons8.com/plasticine/100/000000/light-off.png"/></td>
+                <td>ELECTROHUB</td>
+            </tr></table>
+            
+        </div>
+        <div class="midnav">
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="categories.html">Collections</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="demo.html">Demo</a>
+        </div>
+        <div class="right-nav">
+            <a href="#">Search</a>
+            <a href="#"><button onclick="func1()">LOGIN</button>
+            </a>
+        </div>
+    </section>
+    <div class="bar">
+        <span class="bar_content">
+          Free Shipping Over $50 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Shipping All Over The World  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sales Start Soon &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Best Offers
+        </span>
+      </div>
+    <section id="turtle">
+        <div>OLED Contrast & Sound, Mastered with Human Intelligence </div>
+    </section>
+    <section class="three-boxes">
+        <div>
+            <img src="images/box_1.jpeg">
+        </div>
+        <div>
+            <img src="images/iphone-cases.jpeg">
+        </div>
+        <div>
+            <img src="images/box_3.webp">
+        </div>
+    </section>
+    <section id="trending">
+        <div class="trend">
+            What's New
+        </div>
+        <div class="trending-content">
+            <div class="trend-img">
+                <img src="images/fridge.webp">
+                <div class="trend-text">
+                    Double Door Refrigerator
+                </div>
+            </div>
+            <div class="trend-img">
+                <img src="images/fan.webp">
+                <div class="trend-text">
+                    Inverter ceiling fan 
+                </div>
+            </div>
+            <div class="trend-img">
+                <img src="images/ac.webp">
+                <div class="trend-text">
+                    Super Convertible 5-in-1
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="prod-content">
+        <div class="prod-img">
+            <img src="images/washing.jpeg">
+
+        </div>
+        <div class="prod-img">
+            <img src="images/vaccum.webp">
+        </div>
+        <div class="prod-img">
+            <img src="images/tv.webp">
+        </div>
+        <div class="prod-img">
+            <img src="images/speaker.webp">
+        </div>
+        <div class="prod-img">
+            <img src="images/monitor.webp">
+        </div>
+
+
+    </div>
+
+
+    <div id="best">Best Sellers</div>
+    <div class="best-content">
+        <div class="best-img">
+            <figure>
+            <img src="images/blue-phone.webp"><figcaption>SAMSUNG</figcaption>
+</figure>
+        </div>
+        <div class="best-img">
+            <figure>
+            <img src="images/air_dresser.webp"><figcaption>Air Dresser LG</figcaption></figure>
+        </div>
+        <div class="best-img">
+            <img src="images/air_purifier.webp"><figcaption>Air Purifier</figcaption>
+        </div>
+    </div>
+
+
+
+    <div class="companies">
+        <div class="company-img">
+            <img src="https://img.icons8.com/ios-filled/500/000000/mac-os.png"/>
+
+        </div>
+        <div class="company-img">
+            <img src="https://img.icons8.com/ios-filled/250/000000/videocon-d2h.png"/>
+        </div>
+        <div class="company-img">
+<img src="https://img.icons8.com/ios-filled/500/000000/fitbit.png"/>
+        </div>
+        <div class="company-img">
+            <img src="https://img.icons8.com/windows/256/000000/ps3.png"/>
+
+        </div>
+        <div class="company-img">
+            <img src="https://img.icons8.com/dotty/240/000000/msi.png"/>
+        </div>
+        <div class="company-img">
+            <img src="images/IMG_1823.PNG">
+        </div>
+    </div>
+
+
+    <div id="notes">
+        <ol type="A">
+            <li>Quoted MRP is for 1 unit of the product. Prices are subject to change without prior notice.</li>
+            <li>Applicable with A9, A7RM3, A7M3, A7SM2, A7RM2, A7M2 only.</li>
+            <li>2 Year Standard Warranty + 1 Year Additional Warranty only upon registration. Conditions Apply.</li>
+            <li>While efforts have been placed to provide accurate information, there could be human errors which may crept in. In the event of discrepancy, the product operating instructions supplied with product shall be the authentic reference point.</li>
+            <li>Features, Specification, weight & price are subject to change without prior notice.</li>
+            <li>Actual product may differ slightly in appearance to illustrations/ picture provided.</li>
+        </ol>
+    </div>
+    <div id="copyright">
+        © 2022, Electohub. All Rights Reserved
+    </div>
+
+</body>
+<script>
+    function func1(){
+        window.open("login.html");
+    }
+    function like(x) {
+     x.classList.toggle("fa-thumbs-down");
+}
+
+
+const popup = document.querySelector(".like");
+window.onload = function(){
+    setTimeout(function(){
+        popup.style.display="block";
+
+    },10000)
+}
+
+document.querySelector(".btn1").addEventListener
+("click", function(){
+    document.querySelector(".like").style.display="none";
+});
+</script>
+</html>
