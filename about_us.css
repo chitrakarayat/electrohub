@@ -1,6 +1,60 @@
 html{
     scroll-behavior: smooth;
 }
+#nav-bar {
+    width: 100%;
+    height: 3vw;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1vw;
+    font-family: sans-serif;
+    position: fixed;
+    background-color: white;
+    z-index: 10;
+}
+.leftnav{
+    font-style: oblique;
+    font-weight: bold;
+}
+.leftnav img{
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.midnav a {
+    padding-right: 2vw;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+.midnav a:hover{
+    color:green;
+}
+
+.right-nav a {
+    padding-right: 1vw;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+.right-nav button{
+    border: 2px solid green;
+    background-color: green;
+    width: 5vw;
+    font-size: 1vw;
+    height: 1 vw;
+    color: white;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px grey;
+    transition-duration: 0.5s;
+    
+}
+.right-nav button:hover{
+    font-size: 1vw;
+    background-color: black;
+}
+
 #nav table {
     width: 100%;
     text-align: center;
@@ -13,7 +67,7 @@ html{
     color: black;
 }
 #nav a:hover{
-    color: darkgreen;
+    color: rgb(42, 112, 135);
 }
 body {
     margin: 0;
@@ -21,8 +75,8 @@ body {
 }
 
 #main {
-    background-image: url("images/pexels-sasha-martynov-1260727.jpg");
-    color: darkgreen;
+    background-image: url("images/pexels-johannes-plenio-1103970.jpg");
+    color: rgb(53, 53, 53);
     font-weight: 700;
     height: 100vh;
     background-size: cover;
@@ -30,6 +84,7 @@ body {
     background-repeat: no-repeat;
     position: relative;
     opacity: 0.8;
+    padding-top: 5vw;
 }
 
 #head {
@@ -73,7 +128,7 @@ body {
     margin-top: 30%;
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(179, 232, 179);
+    background-color: rgb(190, 205, 215);
     margin-bottom: 10%;
     width: 100%;
     flex-wrap: wrap;
@@ -104,7 +159,7 @@ body {
 }
 
 #investors span {
-    color: gb(179, 232, 179);
+    color: lightblue;
 }
 
 #brands span {
@@ -124,7 +179,7 @@ body {
     padding: 2% 5% 2% 5%;
 }
 #investors span{
-    color:rgb(179, 232, 179);
+    color:lightblue;
 }
 
 #locations h3 {
@@ -135,7 +190,7 @@ body {
 }
 
 #locations {
-    background-color: rgb(179, 232, 179);
+    background-color: rgb(190, 205, 215);
     padding: 2%;
 
 }
@@ -227,7 +282,7 @@ textarea::placeholder {
     margin-left: 25%;
     padding: 1.5% 4.5%;
     font-size: larger;
-    background-color: rgb(179, 232, 179);
+    background-color: rgb(190, 205, 215);
     color: white;
     border-radius: 0px;
     transition: 0.3s;
@@ -240,5 +295,5 @@ textarea::placeholder {
 }
 
 #span span{
-    color:rgb(134, 236, 134);
+    color:rgb(128, 173, 188);
 }

@@ -5,12 +5,13 @@
 
 #nav-bar {
     width: 100%;
-    height: 5vh;
+    height: 3.5vw;
     display: flex;
     justify-content: space-around;
     padding-top: 1vw;
     font-family: sans-serif;
-    
+    position: fixed;
+    background-color: white;
 }
 
 #turtle {
@@ -58,6 +59,8 @@
     border: 2px solid green;
     background-color: green;
     width: 5vw;
+    font-size: 1vw;
+    height: 1 vw;
     color: white;
     border-radius: 25px;
     box-shadow: 2px 2px 2px grey;
@@ -73,7 +76,7 @@
     display: flex;
 }
 
-.three-boxes div {
+.three-boxes a {
     width: 33.33%;
 }
 
@@ -123,6 +126,10 @@
     font-weight: 600;
 
 }
+.trend-text a{
+    text-decoration: none;
+    color: black;
+}
 
 .trend-img:hover .trend-text {
     display: block;
@@ -161,6 +168,10 @@
     transition-duration: 1s;
 
 }
+.best-img a{
+    text-decoration: none;
+    color: black;
+}
 
 
 #best{
@@ -176,6 +187,7 @@
     display: flex;
     margin: 10vw 10vw 2vw 10vw;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .company-img img{
     width: 10vh;
@@ -225,6 +237,8 @@ html { overflow-x: hidden; }
     background-color: rgb(123, 186, 28);  
     color:white;
     font-family:sans-serif;
+    font-size: 1vw;
+    margin-top: 3.5vw;
 } 
 
 .bar_content {
@@ -233,7 +247,7 @@ html { overflow-x: hidden; }
   width: 100%;
   transform: translateX(100%); 
 
-  animation: move 10s linear infinite;
+  animation: move 15s linear infinite;
 }
 
 @keyframes move {
